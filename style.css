@@ -1,0 +1,133 @@
+:root {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav {
+  text-align: right;
+  padding: 20px 10px;
+}
+nav-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: center;
+  border-radius: 50%;
+  outline: none;
+  padding: 8px;
+}
+nav .nav-icon:hover {
+  background-color: antiquewhite;
+}
+nav .nav-link {
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 0.8rem;
+  color: black;
+}
+nav .nav-button {
+  background: #1a73e8;
+  border: 1px solid transparent;
+  color: white;
+  margin-left: 8px;
+  padding: 9px 23px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+nav .nav-button:hover {
+  background: #1b66c9;
+  box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15),
+    0 1px 2px 0 rgba(60, 64, 67, 0.3);
+}
+/* main */
+.google-logo {
+  padding: 10px 0;
+  height: 92px;
+}
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 400px;
+  padding: 50px;
+}
+.search-box {
+  width: 60vw;
+  height: 45px;
+  border: 1px solid lightgray;
+  border-radius: 23px;
+  display: flex;
+  align-items: stretch;
+}
+.search-input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  flex-grow: 1;
+}
+.search-icon {
+  width: 20px;
+  height: 20px;
+  color: #9aa0a6;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.google-mic {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+.button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  margin: 11px 4px;
+  padding: 0 16px;
+  background-color: #f8f9fa;
+  font-size: 0.8rem;
+  color: #3c4043;
+}
+.languages {
+  font-size: 0.8rem;
+  color: #3c4043;
+}
+.service-item {
+  text-decoration: none;
+  margin-right: 5px;
+}
+/* footer */
+footer .row {
+  color: #70757a;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+footer .row a {
+  text-decoration: none;
+  color: #70757a;
+  margin-right: 10px;
+}
+@media screen and (max-with: 650px) {
+  footer .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
